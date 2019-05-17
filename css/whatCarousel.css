@@ -159,3 +159,7 @@
         box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
     }
 }
+
+.card_i_p_c:hover .overlay_p {
+    transform: scale(1);
+}

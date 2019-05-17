@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/whatCarousel.css">
+    <link rel="stylesheet" href="css/medias.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js">
     </script>
 
@@ -20,7 +22,7 @@
 
 <body>
     <!-- seccion menu & video -->
-    <section class="section_1">
+    <section class="section_1" id="home">
         <video poster="images/IMG-20190502-WA0021.jpg" src="video/1.mp4" autoplay class="video_bg" muted loop></video>
         <div class="overlay_1"></div>
         <!-- menu -->
@@ -39,25 +41,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="inicio">Inicio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="whatare">Que Hacemos</a>
+                            <a class="nav-link" href="#why">Que Hacemos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Como Trabajamos</a>
+                            <a class="nav-link" href="#trabajamos">Como Trabajamos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">portafolio</a>
+                            <a class="nav-link" href="#portafolio">portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link btn_cotizar" href="#">Cotiza ahora</a>
                         </li>
                     </ul>
                 </div>
@@ -68,7 +70,7 @@
         <div class="slider_home">
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-12 col-sm-12 col-md-7">
                         <!-- carousel -->
                         <div class="home-carousel owl-carousel owl-theme">
                             <div class="item">
@@ -108,13 +110,11 @@
 
     <!-- seccion que hacemos -->
 
-    <section class="section_2">
-        <div class="bg_lines">
-            <img src="images/bg/linea fondo pag2.svg" alt="">
+    <section class="section_2" id="why">
+        <div class="bg_lin2">
         </div>
-        
         <h1 class="tilte_1 pt-5">Que hacemos</h1>
-        <div class="container-fluid p-4 overlay_2">
+        <div class="overlay_2">
             <div class="row justify-content-center pt-4">
                 <div class="col-md-6 text-center">
                     <h5>Estamos preparados para
@@ -122,7 +122,6 @@
                         y para hacer crecer tu empresa o negocio.</h5>
                 </div>
             </div>
-
             <!-- owl carusel -->
             <div class="owl_wrapper">
                 <div class="workcarousel owl-carousel owl-theme">
@@ -190,27 +189,28 @@
                 </div>
             </div>
         </div>
+
     </section>
-
-    <!-- seccion porque elegirnos -->
-    <section class="section_3 pb-4 pl-4 pr-4">
-        <h1 class="tilte_1">Por que elegirnos</h1>
-
+    <!-- como trabajamos -->
+    <section class="section_3" id="como-trabajamos">
+        <div class="bg_lin2">
+        </div>
+        <h1 class="tilte_1 pt-5">Porque elegirnos</h1>
         <div class="overlay_3 py-5 px-4">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-12 col-sm-12 col-md-4">
                     <img src="images/imagen1-pag3-(700px).jpg" alt="" class="w-100">
                     <div style="margin-top: -70px;"></div>
                     <a href="" class="a_1">VER MAS</a>
                     <h3>Excelencia </h3>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-sm-12 col-md-4">
                     <img src="images/imagen2-pag3-(700px).jpg" alt="" class="w-100">
                     <div style="margin-top: -70px;"></div>
                     <a href="" class="a_2">VER MAS</a>
                     <h3>Honestidad</h3>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-sm-12 col-md-4">
                     <img src="images/imagen3-pag3-(700px).jpg" alt="" class="w-100">
                     <div style="margin-top: -70px;"></div>
                     <a href="" class="a_3">VER MAS</a>
@@ -220,9 +220,10 @@
         </div>
     </section>
 
-    <!-- como trabajamos -->
+    <section class="section_4">
+        <div class="bg_lin2">
+        </div>
 
-    <section class="section_4 p-5">
         <div class="overlay_4 text-center">
             <h1 class="text-left pt-3 pl-4">Como trabajamos</h1>
             <div class="row justify-content-center">
@@ -247,75 +248,119 @@
                 </div>
             </div>
             <div class="row justify-content-center ">
-                <div class="col-md-3 mt-5 text-center">
+                <div class="col-md-2 mt-5 text-center img_tra_c">
                     <img src="images/ilustracion1(600px).svg" class="img_tra" alt="" class="w-100">
                 </div>
-                <div class="col-md-3 mt-5 text-center">
+                <div class="col-md-2 mt-5 text-center img_tra_c">
                     <img src="images/ilustracion2(600px).svg" class="img_tra" alt="" class="w-100">
                 </div>
-                <div class="col-md-3 mt-5 text-center">
+                <div class="col-md-2 mt-5 text-center img_tra_c">
                     <img src="images/como-traba-p.svg" class="img_tra" alt="" class="w-100">
                 </div>
-                <div class="col-md-3 mt-5 text-center">
+                <div class="col-md-2 mt-5 text-center img_tra_c">
                     <img src="images/ilustracion3(600px).svg" class="img_tra" alt="" class="w-100">
                 </div>
             </div>
         </div>
-        <div class="line_white"></div>
-        <img class="slide_line" src="images/ilustracion5(600px).svg" alt="">
+        <div class="line_white">
+            <img class="slide_line" src="images/ilustracion5(600px).svg" alt="">
+        </div>
     </section>
 
-    <!-- portafolio -->
-    <section class="section_5 py-5 pt-3 pb-3">
+    <section class="section_5" id="portafolio">
+        <h1 class="text-center">nuestros últimos <strong>Proyectos</strong></h1>
+
         <div class="container">
-            <h1 class="tilte_1 text-dark">Portafolio</h1>
-            <div class="row mt-2">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 item_p" class="w-100 text-center">
-                    <div class="card">
-                        <img src="images/portafolio/portafolio2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><a href=""><i class="fas fa-link"></i> Tendencias</a></p>
+            <div class="row">
+                <div class="col-md-4 card_i_p_c mt-4">
+                    <a href="" class="card_item_p">
+                        <div class="card">
+                            <img src="images/bg/1.PNG" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Tendencias</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="overlay_p">
+                        <a href=""><i class="fas fa-location-arrow"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 item_p" class="w-100 text-center">
-                    <div class="card">
-                        <img src="images/portafolio/portafolio3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><a href=""><i class="fas fa-link"></i> Tendencias</a></p>
+                <div class="col-md-4 card_i_p_c mt-4">
+                    <a href="" class="card_item_p">
+                        <div class="card">
+                            <img src="images/bg/1.PNG" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Tendencias</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="overlay_p">
+                        <a href=""><i class="fas fa-location-arrow"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 item_p" class="w-100 text-center">
-                    <div class="card">
-                        <img src="images/portafolio/portafolio4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><a href=""><i class="fas fa-link"></i> Tendencias</a></p>
+                <div class="col-md-4 card_i_p_c mt-4">
+                    <a href="" class="card_item_p">
+                        <div class="card">
+                            <img src="images/bg/1.PNG" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Tendencias</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="overlay_p">
+                        <a href=""><i class="fas fa-location-arrow"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 item_p" class="w-100 text-center">
-                    <div class="card">
-                        <img src="images/portafolio/portafolio5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><a href=""><i class="fas fa-link"></i> Tendencias</a></p>
+                <div class="col-md-4 card_i_p_c mt-4">
+                    <a href="" class="card_item_p">
+                        <div class="card">
+                            <img src="images/bg/1.PNG" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Tendencias</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="overlay_p">
+                        <a href=""><i class="fas fa-location-arrow"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 item_p" class="w-100 text-center">
-                    <div class="card">
-                        <img src="images/portafolio/portafolio6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text"><a href=""><i class="fas fa-link"></i> Tendencias</a></p>
+                <div class="col-md-4 card_i_p_c mt-4">
+                    <a href="" class="card_item_p">
+                        <div class="card">
+                            <img src="images/bg/1.PNG" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Tendencias</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="overlay_p">
+                        <a href=""><i class="fas fa-location-arrow"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 card_i_p_c mt-4">
+                    <a href="" class="card_item_p">
+                        <div class="card">
+                            <img src="images/bg/1.PNG" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Tendencias</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="overlay_p">
+                        <a href=""><i class="fas fa-location-arrow"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- quienes somos -->
-    <section class="section_6">
+    <section class="section_6" id="quienes-somos">
         <div class="overlay_6"></div>
         <div class="container">
             <div class="row">
@@ -331,131 +376,79 @@
                         para algunas empresas
                         en Venezuela.</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="" alt="">
-                    <video src=""></video>
-                </div>
             </div>
         </div>
-
+        <div class="video_tab">
+            <img src="images/60-.png" width="60%" alt="">
+            <video src="video/1.mp4" loop autoplay muted></video>
+        </div>
     </section>
 
-    <!-- project manager -->
     <section class="section_7">
-        <div class="p-4">
-            <div class="row align-items-center mt-3">
-                <div class="col-md-4">
-                    <!-- <div class="hexagono"></div> -->
-                    <img src="images/1-01.png" alt="" class="w-100">
-                </div>
-                <div class="col-md-4 text__inf">
-                    <h4>HOLA! <br>
-                        SOY VERONICA (VERITO)</h4>
-                    <h5>Project Manager</h5>
-                    <div class="separator"></div>
-                    <p>Me hace feliz: Ayudar <br>
-                        Mi color favorito es: Morado <br>
-                        Mi comida favorita: Arroz chino</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 p-5">
-                    <img src="images/2-01.png" alt="" class="w-100">
-                </div>
-                <div class="col-md-3 p-5">
-                    <img src="images/1-01.png" alt="" class="w-100">
-                </div>
-                <div class="col-md-3 p-5">
-                    <img src="images/2-02.png" alt="" class="w-100">
-                </div>
-                <div class="col-md-3 p-5">
-                    <img src="images/2-03.png" alt="" class="w-100">
-                </div>
-            </div>
-        </div>
     </section>
-
-    <!-- nuestras redes -->
 
     <section class="section_8">
-        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-                            <div>
-                                <h1 class="tilte_1">Nuestras Redes</h1>
-                                <div class="separator"></div>
-                            </div>
+        <div class="bg_lin2">
+        </div>
 
-                            <div class="text-center follow_ mt-5">
-                                <a href="">Siguenos @expertosdelaweb</a>
-                            </div>
-
-            <div class="row mt-5">
-                <div class="col-md-3 p-0 m-0">
-                    <img src="images/imagen-pag6.jpg" class="w-100" alt="">
-                </div>
-                <div class="col-md-3 p-0 m-0">
-                    <img src="images/imagen-pag6.jpg" class="w-100" alt="">
-                </div>
-                <div class="col-md-3 p-0 m-0">
-                    <img src="images/imagen-pag6.jpg" class="w-100" alt="">
-                </div>
-                <div class="col-md-3 p-0 m-0">
-                    <img src="images/imagen-pag6.jpg" class="w-100" alt="">
-                </div>
-
-            </div>
-            <div class="red__s mt-4">
-                <a href="">
+        <div class="overlay_8">
+            <h1>SIguenos en nuetras <strong>Redes</strong></h1>
+            <div class="line_redes"></div>
+            <a href="">Siguenos @expertosdelaweb</a>
+            <p class="r_icons">
+                <a href="" class="i_fb">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="">
+                <a href="" class="i_tw">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="">
+                <a href="" class="i_ins">
                     <i class="fab fa-instagram"></i>
                 </a>
-            </div>
+            </p>
         </div>
     </section>
 
-    <!-- contacto -->
     <section class="section_9">
-        <h1 class="tilte_1">Contactanos</h1>
-        <div class="container pb-5">
+        <div class="overlay_9">
+            <h1><strong>Contactanos</strong></h1>
+            <h6>Podemos ayudarte</h6>
+            <div class="container">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                              <div class="form-group">
+    <label for="exampleInputEmail1"><i class="far fa-user"></i> Nombre</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+                        </div>
+                        <div class="col-md-6">
+                              <div class="form-group">
+    <label for="exampleInputEmail1">E-mail</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
 
-            <h3 class="tilte_1">Podemos Ayudarte</h3>
-            <form action="">
-                <div class="row justify-content-center">
-                    <div class="col-md-4 form_input">
-                        <label for=""><i class="far fa-user"></i>Ingrese su Nombre</label>
-                        <input type="text" placeholder="Nombre">
+                            <div class="text-center">
+                                <button id="send_contact">enviar </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 form_input">
-                        <label for=""><i class="far fa-envelope"></i>Ingrese su email Email</label>
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <div class="col-md-8 form_input">
-                        <label for=""><i class="fas fa-pen"></i>Escriba su Mensaje</label>
-                        <textarea name="" id="" placeholder="Mensaje" rows="5"></textarea>
-                    </div>
-                    <div class="col-md-8 form_input">
-                        <button class="btn_sutmit" tyoe="submit">ENVIAR</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <div class="footer mt-5">
-            <a href="">+58 251 263 7294</a>
-            <a href="">gerencia@expertosdelaweb.com</a>
-            <a href="">+58 414 576 4613</a>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- scripts -->
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/custom.js"></script>
@@ -463,7 +456,7 @@
         $(document).ready(function () {
             $('.home-carousel').owlCarousel({
                 loop: true,
-                margin: 10,
+                margin: 0,
                 dots: true,
                 autoplay: true,
                 autoplayTimeout: 5000,
@@ -481,41 +474,43 @@
                 }
             })
 
-                $(".workcarousel").owlCarousel({
-                    rewindNav: false,
-                    addClassActive: true, //important
-                    mouseDrag: false,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        800: {
-                            items: 3
-                        },
-                        1024: {
-                            items: 5
-                        }
+            $(".workcarousel").owlCarousel({
+                rewindNav: false,
+                addClassActive: true, //important
+                mouseDrag: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        dots: false
                     },
-                    afterAction: function add_mid_class(el) {
-                        $('.owl-item')
-                            .removeClass('middle')
-                            .removeClass('middle_beside')
-                            .removeClass('next_to_mid')
-                            .removeClass('prev_to_mid');
-                        var middle_item = Math.floor($('.active').length / 2);
-                        middle_item--;
-                        $('.active').eq(middle_item - 1).addClass('middle_beside');
-                        $('.active').eq(middle_item).addClass('middle');
-                        $('.active').eq(middle_item + 1).addClass('middle_beside');
-                        $('.active').eq(middle_item + 1).nextAll().addClass('next_to_mid');
-                        $('.active').eq(middle_item - 1).prevAll().addClass('prev_to_mid');
+                    500: {
+                        items: 3,
+                        margin: 25,
+                        dots: false
+                    },
+                    1024: {
+                        items: 5,
+                        dots: false
                     }
-                });
+                },
+                afterAction: function add_mid_class(el) {
+                    $('.owl-item')
+                        .removeClass('middle')
+                        .removeClass('middle_beside')
+                        .removeClass('next_to_mid')
+                        .removeClass('prev_to_mid');
+                    var middle_item = Math.floor($('.active').length / 2);
+                    middle_item--;
+                    $('.active').eq(middle_item - 1).addClass('middle_beside');
+                    $('.active').eq(middle_item).addClass('middle');
+                    $('.active').eq(middle_item + 1).addClass('middle_beside');
+                    $('.active').eq(middle_item + 1).nextAll().addClass('next_to_mid');
+                    $('.active').eq(middle_item - 1).prevAll().addClass('prev_to_mid');
+                }
+            });
 
         });
-    </script>
-    <script>
-
     </script>
 
 </body>

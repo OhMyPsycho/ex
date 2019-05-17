@@ -2,41 +2,73 @@
     width: 100%
     overflow: hidden
     position: relative
-    background: #000000
-    .container
-        background: #212121
-        .form_input
+    background: #1c1d20
+    padding-bottom: 3rem
+    .overlay_9
+        text-align: center
+        h1
+            color: #ffffff
+            text-transform: uppercase
             font-family: $monse
-            label
-                color: #ffffff
-                margin-top: 30px
-            input
-                width: 100%
-                font-size: 18px
-                background: #424242
-                border: none
-                padding: 10px 20px
-                border-radius: 5px
-                color: #ff6f00
-                &:focus
-                    outline: none
-            textarea
-                width: 100%
-                font-size: 18px
-                background: #424242
-                border: none
-                padding: 10px 20px
-                border-radius: 5px
-                color: #ff6f00
-                &:focus
-                    outline: none
-            .btn_sutmit
-                background: #ff6f00
-                border: none
-                padding: 10px 20px
-                color: #ffffff
-                font-weight: bold
-                border-radius: 5px
+            font-weight: 100
+            text-align: center
+            margin-top: 3rem
+            text-shadow: 1px 1px 3px rgba(255,255,255,.85)
+            strong
+                font-weight: 700
+        h6
+            color: #ffffff
+            text-transform: uppercase
+            font-family: $monse
+            font-weight: 100
+            text-align: center
+            margin-top: .8rem
+            letter-spacing: 5px
+            strong
+                font-weight: 700
+        .container
+            border-top: 1px solid #18181a
+            border-bottom: 1px solid #18181a
+            margin-top: 3rem
+            padding: 1.5rem
+            form
+                text-align: left
+                .form-group
+                    label
+                        background: linear-gradient(to right, #2AC0FF, #EC00FF, #F97900)
+                        -webkit-background-clip: text
+                        color: transparent
+                        font-family: $monse
+                        font-weight: 300
+                        text-transform: uppercase
+                        i
+                            color: linear-gradient(to right, #2AC0FF, #EC00FF, #F97900)
+                    input.form-control,
+                    textarea.form-control
+                        background: #232427
+                        // border-radius: 25px
+                        border: none
+                        border: 1px solid #232427
+                        &:focus
+                            box-shadow: none
+                            border-image-source: linear-gradient(to right, #2AC0FF, #EC00FF, #F97900)
+                            border-image-slice: 1
+                #send_contact
+                    background: #ffffff
+                    border: none
+                    color: #2AC0FF
+                    border-radius: 25px
+                    font-family: $monse
+                    font-weight: 600
+                    text-transform: uppercase
+                    padding: 10px 22px
+                    font-size: 1.1rem
+                    transition: all ease-in-out .3s
+                    &:hover
+                        color: #ffffff
+                        background: #2AC0FF
+                        border-radius: 0
+
     .footer
         width: 100%
         background: #23074d

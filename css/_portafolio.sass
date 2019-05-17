@@ -1,18 +1,45 @@
 .section_5
     width: 100%
-    overflow: hidden
+    padding-bottom: 20px
     position: relative
     background: #e9e9e9
-    .item_p
-        transition: all ease-in-out .5s
-        cursor: pointer
-        &:hover
-            -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3),0 0 40px rgba(0, 0, 0, 0.1) inset
-            -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
-
-        .card-text
-            a
-                color: #212121
-                text-decoration: none;
-                font-family: $monse
+    h1
+        font-family: $monse
+        font-weight: 100
+        text-transform: uppercase
+        padding-top: 2rem
+        strong
+            font-weight: 700
+    .card_item_p
+        text-decoration: none
+        .card
+            .card-body
+                .card-title
+                    color: #212121
+                    font-family: $monse
+                    font-weight: 600
+                    text-transform: uppercase
+                .card-text
+                    color: #555555
+                    font-family: $monse
+                    font-weight: 300
+                    font-size: small
+    .overlay_p
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba(21,101,192,1)
+        top: 0
+        left: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        transform: scale(0)
+        transition: all ease-in-out .3s
+        a
+            color: rgba(21,101,192,1)
+            font-size: 3rem
+            background: #ffffff
+            border-radius: 50%
+            padding: 5px 15px
+            box-shadow: 2px 3px 12px rgba(0,0,0,.35)
