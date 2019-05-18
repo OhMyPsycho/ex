@@ -553,6 +553,22 @@
   font-weight: 200;
 }
 
+.section_7 .overlay_7 a .cls-1 {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.section_7 .overlay_7 a:hover .cls-1 {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+#Capa_1 {
+  width: 75%;
+}
+
 .section_8 {
   width: 100%;
   overflow: hidden;
