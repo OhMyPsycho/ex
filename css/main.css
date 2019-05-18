@@ -565,6 +565,11 @@
           transform: scale(0.99);
 }
 
+.section_7 .overlay_7 a:focus .cls-1 {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
 #Capa_1 {
   width: 75%;
 }
