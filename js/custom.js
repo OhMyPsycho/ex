@@ -12,8 +12,8 @@ $(document).ready(function() {
     });
 
     var pm = {
-        zona: document.querySelector(".bg_lin2"),
-        figuras: document.querySelectorAll(".bg_lin2 figure"),
+        zona: document.querySelector(".bg_lin1"),
+        figuras: document.querySelectorAll(".bg_lin1 figure"),
         mouseX: 0,
         mouseY: 0 
     }
@@ -22,19 +22,22 @@ $(document).ready(function() {
         mouseInit: function() {
             pm.zona.addEventListener("mousemove", mm.movimientoMouse);
             for (let i = 0; i < pm.figuras.length; i++) {
-                pm.figuras[i].innerHTML = '<img src="images/bg/linea fondo pag2.svg">';
-                
+                pm.figuras[i].innerHTML = '<img src="images/ex/footer00'+i+'.png">';
+                // pm.figuras[i].style.zIndex = -i
             }
-            
+
+            // setTimeout(function () {
+            //     console.log(pm.figuras[0].childNodes[0].height)
+            //     pm.zona.style.height = pm.figuras[0].childNodes[0].height;
+            // }, 100);
         },
         movimientoMouse: function(mouse) {
             // console.log(mouse.offsetX, mouse.offsetY)
             pm.mouseX = mouse.offsetX;
             pm.mouseY = mouse.offsetY;
             for (let i = 0; i < pm.figuras.length; i++) {
-                pm.figuras[i].style.left = pm.mouseX/100+"%"
-                pm.figuras[i].style.top = pm.mouseX / 100 + "%"
-
+                pm.figuras[i].style.left = pm.mouseX/(i*100+100)+"%";
+                // pm.figuras[i].style.top = pm.mouseX / 100 + "%"
             }
         }
     }

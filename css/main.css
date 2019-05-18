@@ -635,7 +635,6 @@
   overflow: hidden;
   position: relative;
   background: #1c1d20;
-  padding-bottom: 3rem;
 }
 
 .section_9 .overlay_9 {
@@ -671,8 +670,8 @@
 }
 
 .section_9 .overlay_9 .container {
-  border-top: 1px solid #18181a;
-  border-bottom: 1px solid #18181a;
+  border-top: 1px solid #252628;
+  border-bottom: 1px solid #252628;
   margin-top: 3rem;
   padding: 1.5rem;
 }
@@ -692,12 +691,16 @@
 }
 
 .section_9 .overlay_9 .container form .form-group label i {
+  color: #ffffff;
   color: linear-gradient(to right, #2AC0FF, #EC00FF, #F97900);
 }
 
 .section_9 .overlay_9 .container form .form-group input.form-control,
 .section_9 .overlay_9 .container form .form-group textarea.form-control {
   background: #232427;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: #ffffff;
   border: none;
   border: 1px solid #232427;
 }
@@ -749,6 +752,23 @@
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
+}
+
+.bg_lin1 {
+  position: relative;
+  overflow: hidden;
+  width: 120%;
+  height: 180px;
+  margin-left: -5%;
+  margin-bottom: -2%;
+  padding: 0;
+  margin-top: 2%;
+}
+
+.bg_lin1 figure {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
 }
 
 .tilte_1 {
