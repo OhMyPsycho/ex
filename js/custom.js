@@ -11,6 +11,9 @@ $(document).ready(function() {
         }
     });
 
+
+
+    // scroll footer
     var pm = {
         zona: document.querySelector(".bg_lin1"),
         figuras: document.querySelectorAll(".bg_lin1 figure"),
@@ -87,17 +90,7 @@ var pop = {
     overlayP: document.querySelector('.overlay_p'),
     state: false
 }
-
-// change image
-
-    // document.querySelector('.img_tra').addEventListener('click', function(event) {
-    //     console.log(event.x)
-    // })
-
-    function moverSlider(Obj) {
-        console.log(Obj.getBoundingClientRect());
-    }
-
+mmt.mouseInit();
 mm.mouseInit();
 ms.scrollInit();
 });
