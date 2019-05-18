@@ -229,7 +229,7 @@
             <h1 class="text-left pt-3 pl-4">Como trabajamos</h1>
                                     <!-- carousel -->
 <div class="como-carousel owl-carousel owl-theme">
-    <div class="item" data-dot="<button role='button' class='owl-dot' onclick='moverSlider(this)'><img src='images/ilustracion1(600px).svg' class='img_tra w-100' alt=''></div></button>">
+    <div class="item" data-hash="zero">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <img src="images/como-traba-p.svg" width="70%" alt="">
@@ -255,7 +255,7 @@
             </div>
         </div>
     </div>
-        <div class="item" data-dot="<button role='button' class='owl-dot' onclick='moverSlider(this)'><img src='images/ilustracion1(600px).svg' class='img_tra w-100' alt=''></div></button>">
+        <div class="item" data-hash="one">
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <img viz="1" src="images/como-traba-p.svg" width="75%" alt="">
@@ -281,7 +281,7 @@
                 </div>
             </div>
         </div>
-            <div class="item" data-dot="<button role='button' class='owl-dot' onclick='moverSlider(this)'><img src='images/ilustracion1(600px).svg' class='img_tra w-100' alt=''></div></button>">
+            <div class="item" data-hash="two">
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                         <img viz="1" src="images/como-traba-p.svg" width="75%" alt="">
@@ -307,7 +307,7 @@
                     </div>
                 </div>
             </div>
-                <div class="item" data-dot="<button role='button' class='owl-dot' onclick='moverSlider(this)'><img src='images/ilustracion1(600px).svg' class='img_tra w-100' alt=''></div></button>">
+                <div class="item" data-hash="three">
                     <div class="row justify-content-center">
                         <div class="col-md-4">
                             <img viz="1" src="images/como-traba-p.svg" width="75%" alt="">
@@ -334,20 +334,20 @@
                     </div>
                 </div>
 </div>
-            <!-- <div class="row justify-content-center ">
-                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this, true)">
-                    <img src="images/ilustracion1(600px).svg" class="img_tra" alt="" class="w-100">
+            <div class="row justify-content-center ">
+                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this)">
+                   <a href="#zero"> <img src="images/ilustracion1(600px).svg" class="img_tra" alt="" class="w-100"></a>
                 </div>
-                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this, true)">
-                    <img src="images/ilustracion2(600px).svg" class="img_tra" alt="" class="w-100">
+                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this)">
+                    <a href="#one"><img src="images/ilustracion2(600px).svg" class="img_tra" alt="" class="w-100"></a>
                 </div>
-                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this, true)">
-                    <img src="images/como-traba-p.svg" class="img_tra" alt="" class="w-100">
+                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this)">
+                    <a href="#two"><img src="images/como-traba-p.svg" class="img_tra" alt="" class="w-100"></a>
                 </div>
-                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this, true)">
-                    <img src="images/ilustracion3(600px).svg" class="img_tra" alt="" class="w-100">
+                <div class="col-md-2 mt-5 text-center img_tra_c" onclick="moverSlider(this)">
+                    <a href="#three"><img src="images/ilustracion3(600px).svg" class="img_tra" alt="" class="w-100"></a>
                 </div>
-            </div> -->
+            </div>
         </div>
         <div class="line_white">
             <img class="slide_line" src="images/ilustracion5(600px).svg" alt="">
@@ -585,18 +585,19 @@
                 animateOut: 'slideOutDown',
                 animateIn: 'flipInX',
                 loop: true,
-                dots: true,
+                dots: false,
+                nav: false,
                 autoplay: false,
                 autoplayTimeout: 5000,
+                URLhashListener: true,
                 autoplayHoverPause: true,
                 smartSpeed: 450,
                 pagination: false,
                 navigation: true,
-                navText: [$('.am-next'), $('.am-prev')],
                 navigation: true,
                 margin: 0,
-                dotData: true,
-                dotsData: true,
+                callbacks: true,
+                startPosition: 'URLHash',
                 responsive: {
                     0: {
                         items: 1
@@ -654,12 +655,11 @@
         function moverSlider(Obj) {
             var slideIcon = document.querySelector('.slide_line');
             var even = Obj.getBoundingClientRect();
-            var positionSlider = event.x-120;
+            var positionSlider = (even.x-even.width)-10;
             slideIcon.style.marginLeft = positionSlider+'px';
             // Obj.childNodes[1].classList.add("imageFixed")
-            console.log(even)
+            console.log(even.width)
             console.log(positionSlider)
-            console.log()
 
 
             }
