@@ -8,18 +8,30 @@
     background-repeat: no-repeat
     background-size: cover
     // filter: grayscale(.80)
-    .hexagono
-        $hw: 100
-        $wh: ((50*$hw)/86)*4.4px
-        width: $hw*1%
-        height: $wh
-        transform: rotate(90deg)
-    .text__inf
-        color: #ffffff
-        font-family: $monse
-        text-align: center
-        h4
-            font-size: 2rem
+    .overlay_7
+        width: 100%
+        height: 100vh
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgba(0,0,0,.55)
+        h3
+            color: #ffffff
+            font-family: $monse
+            font-weight: 600
+            text-transform: uppercase
         h5
-            color: blue
-    
+            color: #00e5ff
+            font-family: $monse
+            font-weight: 200
+            font-style: italic
+        .separator
+            width: 20%
+            height: 4px
+            background: #ee0979
+            background: -webkit-linear-gradient(45deg, #2AC0FF, #EC00FF, #F97900)
+            background: linear-gradient(45deg, #2AC0FF, #EC00FF, #F97900)
+        p
+            color: #ffffff
+            font-family: $monse
+            font-weight: 200

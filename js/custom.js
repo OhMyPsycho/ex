@@ -84,6 +84,17 @@ var pop = {
     overlayP: document.querySelector('.overlay_p'),
     state: false
 }
+
+// change image
+
+    // document.querySelector('.img_tra').addEventListener('click', function(event) {
+    //     console.log(event.x)
+    // })
+
+    function moverSlider(Obj) {
+        console.log(Obj.getBoundingClientRect());
+    }
+
 mm.mouseInit();
 ms.scrollInit();
 });
