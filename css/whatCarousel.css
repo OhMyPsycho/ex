@@ -163,3 +163,6 @@
 .card_i_p_c:hover .overlay_p {
     transform: scale(1);
 }
+.pq_:hover .overlay_pe {
+    transform: scale(1);
+}

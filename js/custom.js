@@ -90,7 +90,42 @@ var pop = {
     overlayP: document.querySelector('.overlay_p'),
     state: false
 }
-mmt.mouseInit();
+
+    var alturaImg = $('.section_2').offset().top;
+    $(window).on('scroll', function () {
+        var barra = $(window).scrollTop();
+        if ($(window).scrollTop() > alturaImg-120) {
+            $('.bg_lin2').css('top', barra / 10 - 100 + '%')
+            console.log(barra / 10 - 100)
+        }
+    });
+
+// enviar email
+$('#send_contact span').css('display', 'none')
+// $('.toast').toast('show');
+$('#formContact').on('submit', function() {
+    var dataForm = $(this).serialize();
+    $.ajax({
+        type: 'post',
+        url: '../mail.php',
+        data: dataForm,
+        beforeSend: function() {
+            $('#send_contact').html('<span class="spinner-border spinner-border-sm" role="status"></span>Espere');
+            $('#send_contact span').css('display', 'inline-block')
+        },
+        success: function(data) {
+            $('.spinner-border').css('display', 'none');
+            $('#resAjax').text(data);
+            $('.toast').toast('show');
+            setTimeout(() => {
+                $('.toast').toast('hide');
+            }, 5000);
+        }
+    })
+    return false;
+})
+
+
 mm.mouseInit();
 ms.scrollInit();
 });

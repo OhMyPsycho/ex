@@ -60,7 +60,7 @@
 
 .section_1 .video_bg {
   position: absolute;
-  z-index: -2;
+  z-index: -1;
   min-width: 100%;
   min-height: 100%;
   top: 50%;
@@ -111,16 +111,25 @@
   background: #212121;
 }
 
-.section_2 .bg_lin2 {
+.section_2 .overf {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0%;
+}
+
+.section_2 .overf .bg_lin2 {
   width: 96%;
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0%;
+  top: 100%;
   z-index: 10;
   background-image: url("../images/bg/linea fondo pag2.svg");
   background-size: 100%;
-  background-position: center;
+  background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
   z-index: 1;
@@ -169,20 +178,30 @@
 }
 
 .section_2 .overlay_2 .workcarousel .item a {
-  color: #212121;
+  color: #5C00CD;
+  border-radius: 25px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
   background: #ffffff;
   padding: 10px 20px;
   margin-bottom: 20px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .section_2 .overlay_2 .workcarousel .item a:hover {
   text-decoration: none;
+  border-radius: 0;
+  background: #5C00CD;
+  color: #ffffff;
 }
 
 .section_3 {
   width: 100%;
   position: relative;
   background: #212121;
+  overflow: hidden;
+  padding-buttom: 7rem;
 }
 
 .section_3 .bg_lin2 {
@@ -254,10 +273,55 @@
   font-size: 2rem;
 }
 
+.overlay_pe {
+  width: 93%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 3.5%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.overlay_pe h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pq_1 {
+  background: rgba(252, 74, 26, 0.65);
+}
+
+.pq_2 {
+  background: rgba(75, 19, 79, 0.65);
+}
+
+.pq_3 {
+  background: rgba(0, 180, 219, 0.65);
+}
+
 .section_4 {
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow: hidden;
   background: #212121;
   color: #ffffff;
 }
@@ -309,6 +373,8 @@
 }
 
 .section_4 .overlay_4 .img_tra_c .img_tra {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
   width: 120px;
   height: 120px;
   background: #ffffff;
@@ -770,6 +836,14 @@
   color: #ffffff;
   background: #2AC0FF;
   border-radius: 0;
+}
+
+.section_9 .overlay_9 .container form #send_contact:focus {
+  outline: none;
+}
+
+.section_9 .overlay_9 .container form #send_contact span {
+  margin-right: 10px;
 }
 
 .section_9 .footer {
