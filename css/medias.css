@@ -112,6 +112,12 @@
     .tilte_1 {
         padding-top: 10%
     }
+    .nasOlw_c .owl_t_n {
+        left: 3%;
+    }
+        .nasOlw_c .owl_t_p {
+            right: 3%;
+        }
 }
 
 @media only screen and (max-width: 690px) {
