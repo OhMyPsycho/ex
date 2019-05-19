@@ -68,13 +68,13 @@ var ms = {
             if (ps.posicionScroll < ps.destinoScroll) {
                 ps.posicionScroll += 100
                 if(ps.posicionScroll >= ps.destinoScroll){
-                    ps.posicionScroll = ps.destinoScroll
+                    ps.posicionScroll = ps.destinoScroll-60
                     clearInterval(ps.intervalo);
                 }
             } else {
                 ps.posicionScroll -= 100
                 if (ps.posicionScroll <= ps.destinoScroll) {
-                    ps.posicionScroll = ps.destinoScroll
+                    ps.posicionScroll = ps.destinoScroll-60
                     clearInterval(ps.intervalo);
                 }
             }
