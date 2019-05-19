@@ -656,6 +656,38 @@
   width: 75%;
 }
 
+.nasOlw_c {
+  width: 100%;
+  position: absolute;
+  bottom: 24%;
+}
+
+.nasOlw_c button {
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+  width: 30px;
+  padding: 0;
+  background: none;
+  border: none;
+  position: absolute;
+}
+
+.nasOlw_c button:focus {
+  outline: none;
+}
+
+.nasOlw_c button img {
+  width: 100%;
+}
+
+.nasOlw_c .owl_t_n {
+  left: 6%;
+}
+
+.nasOlw_c .owl_t_p {
+  right: 6%;
+}
+
 .section_8 {
   width: 100%;
   overflow: hidden;
