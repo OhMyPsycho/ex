@@ -60,6 +60,14 @@
 
 @media only screen and (max-width: 767px) {
 
+    .section_2 {
+        height: auto;
+    }
+
+    .section_2 .overlay_2 {
+        position: relative;
+    }
+
     .section_9 .footer {
         justify-content: center;
         flex-direction: column;
@@ -102,13 +110,13 @@
         margin: auto;
     }
     .tilte_1 {
-        padding-top: 90%
+        padding-top: 10%
     }
 }
 
 @media only screen and (max-width: 690px) {
     .tilte_1 {
-        padding-top: 90%;
+        padding-top: 10%;
     }
     .overlay_2 {
         padding: 0 5%;

@@ -731,6 +731,7 @@
   background: none;
   border: none;
   position: absolute;
+  z-index: 90;
 }
 
 .nasOlw_c button:focus {
