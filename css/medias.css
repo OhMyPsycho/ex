@@ -1,7 +1,7 @@
 /* HOME */
 @media only screen and (max-width: 1024px) {
     .tilte_1 {
-        padding-top: 2rem;
+        padding-top: 12%
     }
     .owl_wrapper {
         width: 100%;
@@ -52,10 +52,20 @@
 }
 
 @media only screen and (max-width: 992px) {
-    
+    .section_1 .slider_home {
+        width: 100%;
+        margin: 0;
+    }
 } 
 
 @media only screen and (max-width: 767px) {
+
+    .section_9 .footer {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .img_tra_c,
     .line_white,
     .slide_line
@@ -90,5 +100,17 @@
     }
     .separator {
         margin: auto;
+    }
+    .tilte_1 {
+        padding-top: 90%
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .tilte_1 {
+        padding-top: 90%;
+    }
+    .overlay_2 {
+        padding: 0 5%;
     }
 }
