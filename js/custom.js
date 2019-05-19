@@ -96,7 +96,7 @@ var pop = {
         var barra = $(window).scrollTop();
         if ($(window).scrollTop() > alturaImg-120) {
             $('.bg_lin2').css('top', barra / 10 - 100 + '%')
-            console.log(barra / 10 - 100)
+            // console.log(barra / 10 - 100)
         }
     });
 
@@ -125,6 +125,15 @@ $('#formContact').on('submit', function() {
     return false;
 })
 
+    // var videoh = document.querySelector('.video_tab video');
+    // var imgv = document.querySelector('.video_tab img');
+    // imgv.style.width = videoh.offsetWidth + 100+ 'px';
+    // imgv.style.height = videoh.offsetHeight + 'px';
+    // window.addEventListener('resize', function() {
+    //     imgv.style.height = videoh.offsetHeight + 'px';
+    //     imgv.style.height = videoh.offsetHeight+'px';
+    // })
+    // console.log(videoh.offsetHeight);
 
 mm.mouseInit();
 ms.scrollInit();
