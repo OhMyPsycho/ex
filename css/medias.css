@@ -82,4 +82,13 @@
         width: 43%;
         height: 50%;
     }
+    .con_select_team {
+        display: none
+    }
+    .person-carousel {
+        text-align: center;
+    }
+    .separator {
+        margin: auto;
+    }
 }
