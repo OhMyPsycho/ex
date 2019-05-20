@@ -1,5 +1,8 @@
 /* HOME */
 @media only screen and (max-width: 1024px) {
+    .section_3 {
+        padding-top: 20%;
+    }
     .tilte_1 {
         padding-top: 12%
     }
