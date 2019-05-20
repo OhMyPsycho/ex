@@ -798,6 +798,10 @@
     </section>
 
     <section class="section_9" id="contact">
+        <div class="msg_c">
+            <p class="py-0 px-4 m-0" id="resAjax"></p>
+            <div class="loading_toas"></div>
+        </div>
         <div class="overlay_9">
             <h1><strong>Contactanos</strong></h1>
             <h6>Podemos ayudarte</h6>
@@ -808,8 +812,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1"><img src="images/user-regular.svg" width="18" alt="">
                                     Nombre</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Ingresar Nombre">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone else.</small>
                             </div>
@@ -818,8 +821,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1"><img src="images/envelope-regular.svg" width="18"
                                         alt=""> E-mail</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su correo electronico">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone else.</small>
                             </div>
@@ -828,7 +830,7 @@
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1"><img src="images/pencil-alt-solid.svg"
                                         width="18" alt="">Mensaje</label>
-                                <textarea class="form-control" placeholder="Escribe tu mensaje..."
+                                <textarea class="form-control" name="msg" placeholder="Escribe tu mensaje..."
                                     id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
 

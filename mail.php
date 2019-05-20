@@ -1,5 +1,5 @@
 <?php
-sleep(2);
+sleep(1);
 $name = (isset($_POST['name'])) ? htmlspecialchars($_POST['name']) : '';
 $email = (isset($_POST['email'])) ? htmlspecialchars($_POST['email']) : '';
 $msg = (isset($_POST['msg'])) ? htmlspecialchars($_POST['msg']) : '';

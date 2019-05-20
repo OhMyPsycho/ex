@@ -131,3 +131,39 @@
         padding: 0 5%;
     }
 }
+
+@keyframes toas_c {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.msg_c {
+    position: absolute;
+    background: #232427;
+    bottom: 34%;
+    right: -50%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 99;
+    font-weight: 200;
+    padding-top: 10px;
+    text-transform: uppercase;
+    transition: all ease-in-out 1s;
+}
+.msg_c p {
+    padding: 0 20px;
+}
+
+.loading_toas {
+    width: 0%;
+    height: 4px;
+    margin-top: 6px;
+    background: #ee0979; 
+    background: -webkit-linear-gradient(45deg, #2AC0FF, #EC00FF, #F97900);
+    background: linear-gradient(45deg, #2AC0FF, #EC00FF, #F97900);
+    transition: all ease-in-out .3s;
+}

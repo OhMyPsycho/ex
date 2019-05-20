@@ -99,15 +99,13 @@ var pop = {
             // console.log(barra / 10 - 100)
         }
     });
-
+    $('.spinner-border').css('display', 'none');
 // enviar email
-$('#send_contact span').css('display', 'none')
-// $('.toast').toast('show');
 $('#formContact').on('submit', function() {
     var dataForm = $(this).serialize();
     $.ajax({
         type: 'post',
-        url: '../mail.php',
+        url: 'http://localhost/ew/mail.php',
         data: dataForm,
         beforeSend: function() {
             $('#send_contact').html('<span class="spinner-border spinner-border-sm" role="status"></span>Espere');
@@ -116,9 +114,10 @@ $('#formContact').on('submit', function() {
         success: function(data) {
             $('.spinner-border').css('display', 'none');
             $('#resAjax').text(data);
-            $('.toast').toast('show');
+            $('.msg_c').css('right', '2%');
+            $('.msg_c .loading_toas').css('animation', 'toas_c 5s');
             setTimeout(() => {
-                $('.toast').toast('hide');
+                $('.msg_c').css('right', '-50%');
             }, 5000);
         }
     })
